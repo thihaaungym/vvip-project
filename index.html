@@ -34,10 +34,11 @@
         <button id="generateBtn">Generate Link</button>
 
         <div id="result" class="hidden">
-            <h2>Your Subscription Link</h2>
-            <textarea id="subLink" readonly></textarea>
+            <h2>Your Links & QR Code</h2>
+            <p class="copy-hint">Click the button below to import directly into mobile apps like Karing.</p>
+            <a href="#" id="importBtn" class="button-import" role="button">🚀 Import Directly to Clash App</a>
+            <textarea id="subLink" readonly title="Click to copy manual subscription link"></textarea>
             <canvas id="qrCode"></canvas>
-            <p class="copy-hint">Click the link or scan the QR code to import.</p>
         </div>
     </div>
     <script src="script.js"></script>
