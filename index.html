@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇹🇭 Thai Clash Subscription Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🇹🇭 Ultimate Thai Clash Config</h1>
+        <p>Enter your VLESS-Reality details to generate a subscription link.</p>
+        
+        <div class="form-grid">
+            <div class="input-group">
+                <label for="server">Server Address</label>
+                <input type="text" id="server" placeholder="my.994471.xyz">
+            </div>
+            <div class="input-group">
+                <label for="uuid">UUID</label>
+                <input type="text" id="uuid" placeholder="521231a5-4de8-4755-aae6-34b63b48f5a5">
+            </div>
+            <div class="input-group">
+                <label for="pk">Public Key</label>
+                <input type="text" id="pk" placeholder="YZQOBKdNtKm-iGW_P5l1Y9rR2b_Jo_FQuF0uHqZ8WC4">
+            </div>
+            <div class="input-group">
+                <label for="sid">Short ID</label>
+                <input type="text" id="sid" placeholder="3e6c78341859b978">
+            </div>
+        </div>
+        
+        <button id="generateBtn">Generate Link</button>
+
+        <div id="result" class="hidden">
+            <h2>Your Subscription Link</h2>
+            <textarea id="subLink" readonly></textarea>
+            <canvas id="qrCode"></canvas>
+            <p class="copy-hint">Click the link or scan the QR code to import.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
