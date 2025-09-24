@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- START: CONFIGURATION ---
     // IMPORTANT: Only the WORKER_URL needs to be changed by you!
-    const WORKER_URL = "https://YOUR_WORKER_NAME.YOUR_ACCOUNT.workers.dev"; // ⚠️ YOUR WORKER URL HERE
+    const WORKER_URL = "https://vvip-project.pages.dev/"; // ⚠️ YOUR WORKER URL HERE
     const GIST_TEMPLATE_URL = "https://gist.githubusercontent.com/thihaaungym/8d548592e8c2c8f21eef48588d03b6fc/raw/ff230f3e55c39168504bbd74becebe9ecf5f5f80/clash-thailand.yaml"; // ✅ Your Gist URL is correctly added.
     // --- END: CONFIGURATION ---
 
