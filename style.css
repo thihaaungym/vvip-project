@@ -23,15 +23,8 @@ body {
     text-align: center;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-p {
-    color: #666;
-    margin-bottom: 30px;
-}
+h1 { font-size: 24px; margin-bottom: 10px; }
+p { color: #666; margin-bottom: 30px; }
 
 .form-grid {
     display: grid;
@@ -40,9 +33,7 @@ p {
     margin-bottom: 30px;
 }
 
-.input-group {
-    text-align: left;
-}
+.input-group { text-align: left; }
 
 label {
     display: block;
@@ -67,7 +58,7 @@ input[type="text"]:focus {
     outline: none;
 }
 
-button {
+button, .button-import {
     background-color: #007bff;
     color: white;
     border: none;
@@ -78,11 +69,21 @@ button {
     cursor: pointer;
     width: 100%;
     transition: background-color 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
-button:hover {
+button:hover, .button-import:hover {
     background-color: #0056b3;
+    color: white;
 }
+
+.button-import {
+    background-color: #28a745;
+    margin-bottom: 15px;
+}
+.button-import:hover { background-color: #218838; }
 
 #result {
     margin-top: 30px;
@@ -98,7 +99,7 @@ textarea {
     font-family: monospace;
     font-size: 12px;
     resize: none;
-    height: 80px;
+    height: 60px;
     margin-bottom: 20px;
     box-sizing: border-box;
     cursor: copy;
@@ -108,14 +109,8 @@ textarea {
     max-width: 200px;
     border-radius: 8px;
     border: 1px solid #eee;
-}
-
-.copy-hint {
-    font-size: 12px;
-    color: #888;
     margin-top: 10px;
 }
 
-.hidden {
-    display: none;
-}
+.copy-hint { font-size: 12px; color: #888; margin-bottom: 15px; }
+.hidden { display: none; }
